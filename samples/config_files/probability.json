@@ -1,0 +1,132 @@
+{
+  "MODEL_CONFIG": {
+    "CREDIT_DEBIT_RATIO": 1.0,
+    "CREDIT_MDAB_RATIO": 1.0
+  },
+  "COLUMN_CONFIG": [
+    {
+      "FILE": "DECILE",
+      "COLUMNS": {
+        "RTGS": 0.5,
+        "FD": 0.2,
+        "ECS": 0.5,
+        "LOCKER": 0.5,
+        "OFFLINE": 0.5,
+        "monthly_daily_average_balance": 1,
+        "LOAN": 0.0,
+        "CCPMT": 0.2,
+        "TAXPMT": 0.2,
+        "NEFT": 0.5,
+        "CHEQUE": 0.5,
+        "CHARGES": 0.5,
+        "SALARY": 0.5,
+        "DEBIT": 0.5,
+        "DDPO": 0.5,
+        "SI": 0.5,
+        "FT": 0.5,
+        "INTEREST": 0.5,
+        "CREDIT": 0.5
+      }
+    },
+    {
+      "FILE": "GENOME",
+      "COLUMNS": {
+        "Lifestage_Encoded": 0.5,
+        "Cluster_Encoded": 0.1
+      }
+    },
+    {
+      "FILE": "DEMOGRAPHIC",
+      "COLUMNS": {
+        "ATM_Count": 0.5,
+        "No_Of_Family": 1.0,
+        "Segment": 1.0,
+        "POS_Count": 0.2,
+        "Age": 1.0,
+        "MB_Count": 0.0,
+        "No_of_XH": 1.0,
+        "BNA_Count": 0.2,
+        "Total_Credits_Count": 0.5,
+        "No_Of_Live_Acc": 0.5,
+        "Total_Debits_Count": 0.5,
+        "BRN_Count": 0.5,
+        "INB_Count": 0.0,
+        "AUTO_Count": 0.5,
+        "Occupation": 1.0,
+        "NI_Count": 0.0
+      }
+    },
+    {
+      "FILE": "TRANSACTIONS",
+      "COLUMNS": {
+        "AUTO_Channel_Amount": 0.5,
+        "LOAN": 0.0,
+        "MB_Channel_Count": 0.0,
+        "FD": 0.2,
+        "NI_Channel_Amount": 0.0,
+        "LOCKER": 0.5,
+        "monthly_daily_average_balance": 1,
+        "MB_Channel_Amount": 0.0,
+        "ECS": 0.5,
+        "BNA_Channel_Count": 0.2,
+        "NEFT": 0.5,
+        "CHEQUE": 0.5,
+        "CHARGES": 0.5,
+        "SALARY": 0.5,
+        "BNA_Channel_Amount": 0.2,
+        "CCPMT": 0.2,
+        "POS_Channel_Count": 0.2,
+        "RTGS": 0.5,
+        "BRN_Channel_Count": 0.5,
+        "SI": 0.5,
+        "INB_Channel_Count": 0.0,
+        "ATM_Channel_Amount": 0.5,
+        "NI_Channel_Count": 0.0,
+        "FT": 0.5,
+        "OFFLINE": 0.5,
+        "AUTO_Channel_Count": 0.5,
+        "CREDIT": 0.5,
+        "TAXPMT": 0.2,
+        "INTEREST": 0.5,
+        "BRN_Channel_Amount": 0.5,
+        "INB_Channel_Amount": 0.2,
+        "DEBIT": 0.5,
+        "DDPO": 0.5,
+        "POS_Channel_Amount": 0.2,
+        "ATM_Channel_Count": 0.5
+      }
+    },
+    {
+      "FILE": "TRANSACTION_COUNTS",
+      "COLUMNS": {
+        "RTGS": 0.5,
+        "SI": 0.5,
+        "FD": 0.2,
+        "ECS": 0.5,
+        "LOCKER": 0.2,
+        "OFFLINE": 0.2,
+        "DDPO": 0.5,
+        "LOAN": 0.2,
+        "CCPMT": 0.2,
+        "TAXPMT": 0.2,
+        "NEFT": 0.5,
+        "CHEQUE": 0.5,
+        "CHARGES": 0.5,
+        "SALARY": 0.1,
+        "DEBIT": 0.5,
+        "FT": 0.2,
+        "INTEREST": 0.5,
+        "CREDIT": 0.5
+      }
+    },
+    {
+      "FILE": "RATIO",
+      "COLUMNS": {
+        "DEBIT_6": 1,
+        "CASH_6": 0,
+        "CREDIT_6": 1,
+        "MDAB_6": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "PROBABILITY_PATH":"./samples/config_files/probability.json",
+  "MODEL_PATH": "./samples/MODEL1",
+  "MODEL_SAVE_PATH": "",
+  "MODEL_SAVE_PATH_FEED": "",
+  "DATA_PATH": {
+    "DEMOGRAPHIC": "./samples/data/axis24july/train/demographic.csv",
+    "TRANSACTION": "./samples/data/axis24july/train/transaction.csv",
+    "DECILE": "./samples/data/axis24july/train/decile.csv",
+    "GENOME": "./samples/data/axis24july/train/genome.csv",
+    "RATIO": "./samples/data/axis24july/train/ratio.csv",
+    "LI": "./samples/data/axis24july/train/li.csv",
+    "DEMOGRAPHIC_FEED": "./samples/data/axis24july/feed/demographic.csv",
+    "TRANSACTION_FEED": "./samples/data/axis24july/feed/transaction.csv",
+    "DECILE_FEED": "./samples/data/axis24july/feed/decile.csv",
+    "GENOME_FEED": "./samples/data/axis24july/feed/genome.csv",
+    "RATIO_FEED": "./samples/data/axis24july/feed/ratio.csv",
+    "LI_FEED": "./samples/data/axis24july/feed/li.csv"
+
+  },
+  "TEMPLATES": {
+    "MODEL_TEMPLATE": "./samples/templates/axis_prod/event_model.py",
+    "MODEL_FEED_TEMPLATE": "./samples/templates/axis_prod/event_model_pred.py",
+    "MODEL_PERSIST_TRAIN_TEMPLATE":"./samples/templates/axis_prod/persist_train.py",
+    "SEGMENTATION_TRAIN_TEMPLATE":"./samples/templates/axis_prod/segmentation_train.py",
+    "SEGMENTATION_FEED_TEMPLATE":"./samples/templates/axis_prod/segmentation_feed.py"
+  },
+  "SCORES_PATH": "./samples/config_files/axis24july/score.json",
+  "COLUMNS_PATH":"./samples/config_files/columns.json",
+  "RZTDL_CONFIG_PATH":"/Users/himaprasoon/git/rztdl/rztdl/config/rztdl_config.json"
+}
