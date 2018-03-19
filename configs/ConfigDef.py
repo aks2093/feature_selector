@@ -11,8 +11,6 @@
 ..todo::
 
 """
-import json
-from configs.path_config import PathConfig
 from typeguard import typechecked
 
 
@@ -46,18 +44,17 @@ class ConfigDef():
     """
 
     @typechecked
-    def __init__(self,config_json: str):
+    def __init__(self,columns: dict, probabilities: dict):
         """
 
-        :param config_json:
+        :param columns: A Dictionary, contains columns name and their range.
+        :param probabilities: A Dictionary, contains probabilities for each column.
         """
         self.columnConfigs = {}
-        probabilities = json.load(open(PathConfig(config_json).PROBABILITY_PATH))
-        columns_def = json.load(open(PathConfig(config_json).COLUMNS_PATH))
         for column_configs in probabilities["COLUMN_CONFIG"]:
             file = column_configs["FILE"]
             for col in column_configs["COLUMNS"]:
-                if file in columns_def:
-                    column_range = columns_def[file][col]
+                if file in columns:
+                    column_range = columns[file][col]
                     self.columnConfigs[file + "." + col] = ColumnConfig(col, file, column_configs["COLUMNS"][col],
                                                                         column_range)
